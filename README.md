@@ -14,7 +14,6 @@ This project demonstrates:
 - Model deployment
 - A streamlit user-interface(UI)
 
----
 
 ## Dataset
 
@@ -26,7 +25,6 @@ This project demonstrates:
 
 The dataset contains measurements computed from digitized images of **fine needle aspirate (FNA)** of breast masses. Each feature represents characteristics of the cell nucleus such as radius, texture, perimeter, area, smoothness and concavity.
 
----
 
 ## Exploratory Data Analysis (EDA)
 
@@ -51,7 +49,12 @@ The following visualization techniques were used:
 
 All EDA steps, visualizations, and findings are documented in the Google Colab notebook.
 
----
+
+## Model Building and Selection
+
+### Why Supervised Learning?
+
+Supervised learning was used because the dataset contains **labeled outcomes**, indicating whether each tumor is benign or malignant. This allows the model to learn direct relationships between diagnostic features and known classifications.
 
 Supervised learning was appropriate because:
 - The problem is a **binary classification task**
@@ -82,13 +85,11 @@ The final model was evaluated using:
 - **Classification report**
 - **Confusion matrix**
 
----
 
 ## Model Saving and Deployment
 
 The trained SVM model and its associated **StandardScaler** were saved using `pickle`. These saved artifacts were later loaded into the Streamlit application to ensure consistent preprocessing and reliable predictions during deployment.
 
----
 
 ## Streamlit Web Application
 
@@ -107,7 +108,6 @@ The Streamlit application provides an intuitive and user friendly interface for 
 - **Confidence Level:** A percentage representation derived from the decision score to show prediction certainty
 - **Strength:** A simplified label (High, Moderate, Lower) to make confidence understandable for non-technical users
 
----
 
 ## AI Health Assistant
 
@@ -119,7 +119,6 @@ The application includes an AI-powered health assistant built using **Google Gem
 
 The AI assistant does **not** provide medical diagnoses or replace healthcare professionals.
 
----
 
 ## Medical Disclaimer
 
@@ -127,7 +126,6 @@ This system is intended for **educational and decision-support purposes only**.
 
 It is **not a medical diagnostic tool** and must not be used as a substitute for professional medical advice, diagnosis, or treatment. All results should be reviewed by qualified healthcare professionals.
 
----
 
 ## Real-World Impact
 
@@ -137,7 +135,6 @@ This project demonstrates how machine learning can:
 - Enhance patient understanding and engagement
 - Bridge the gap between technical analysis and healthcare communication
 
----
 
 ## Tools Used
 
@@ -149,7 +146,6 @@ This project demonstrates how machine learning can:
 - Google Gemini API
 - Pickle
 
----
 
 
 ## Conclusion
